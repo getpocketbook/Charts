@@ -396,7 +396,7 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
                 }
                 
                 context.setFillColor(dataSet.barShadowColor.cgColor)
-                let cSize = barRect.width * 0.18
+                let cSize = barRect.width * 0.2
                 let bezierPath = UIBezierPath(roundedRect: barRect,
                                               byRoundingCorners: [.topLeft, .topRight],
                                               cornerRadii: CGSize(width: cSize, height: cSize))
@@ -436,7 +436,7 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
                 context.setFillColor(dataSet.color(atIndex: j).cgColor)
             }
             
-            let cSize = barRect.width * 0.18
+            let cSize = barRect.width * 0.2
             let bezierPath = UIBezierPath(roundedRect: barRect,
                                           byRoundingCorners: [.topLeft, .topRight],
                                           cornerRadii: CGSize(width: cSize, height: cSize))
@@ -821,7 +821,7 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
                 
                 setHighlightDrawPos(highlight: high, barRect: barRect)
                 
-                let cSize = barRect.width * 0.18
+                let cSize = barRect.width * 0.2
                 let bezierPath = UIBezierPath(roundedRect: barRect,
                                               byRoundingCorners: [.topLeft, .topRight],
                                               cornerRadii: CGSize(width: cSize, height: cSize))
